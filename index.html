@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cosmic Bubbles 🫧</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <canvas id="bgCanvas"></canvas>
+
+  <div id="app">
+    <!-- Start Screen -->
+    <div id="startScreen" class="screen active">
+      <div class="title-glow">
+        <h1>COSMIC<br><span>BUBBLES</span></h1>
+        <p class="subtitle">Pop the bubbles. Beat the clock. Rule the cosmos.</p>
+      </div>
+      <div class="difficulty-select">
+        <button class="diff-btn active" data-diff="easy">EASY</button>
+        <button class="diff-btn" data-diff="medium">MEDIUM</button>
+        <button class="diff-btn" data-diff="hard">HARD</button>
+      </div>
+      <button id="startBtn" class="btn-primary pulse">LAUNCH MISSION</button>
+      <div id="highScoreDisplay" class="high-score-display"></div>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="gameScreen" class="screen">
+      <div id="hud">
+        <div class="hud-item">
+          <span class="hud-label">SCORE</span>
+          <span id="score" class="hud-value">0</span>
+        </div>
+        <div class="hud-item center">
+          <span class="hud-label">TIME</span>
+          <span id="timer" class="hud-value">60</span>
+        </div>
+        <div class="hud-item right">
+          <span class="hud-label">COMBO</span>
+          <span id="combo" class="hud-value">x1</span>
+        </div>
+      </div>
+      <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="gameOverScreen" class="screen">
+      <div class="result-card">
+        <h2 id="resultTitle">MISSION COMPLETE</h2>
+        <div class="result-score">
+          <span class="result-label">FINAL SCORE</span>
+          <span id="finalScore" class="result-value">0</span>
+        </div>
+        <div id="newHighScore" class="new-high-score" style="display:none">🏆 NEW HIGH SCORE!</div>
+        <div class="result-stats">
+          <div class="stat"><span class="stat-label">Bubbles Popped</span><span id="statBubbles" class="stat-value">0</span></div>
+          <div class="stat"><span class="stat-label">Max Combo</span><span id="statCombo" class="stat-value">x1</span></div>
+          <div class="stat"><span class="stat-label">Accuracy</span><span id="statAccuracy" class="stat-value">0%</span></div>
+        </div>
+        <div class="result-buttons">
+          <button id="retryBtn" class="btn-primary">RETRY</button>
+          <button id="menuBtn" class="btn-secondary">MENU</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating score popup template -->
+  <div id="scorePopup" class="score-popup" style="display:none"></div>
+
+  <script src="game.js"></script>
+</body>
+</html>
