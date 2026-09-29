@@ -1,6 +1,6 @@
-# Basic Website Page
-Click the bubbles to pop.
-#### Let's play: https://hasankhair.github.io/basic-website-page/open.html
+# Pop
+This is game to pop the bubbles by clicking on it build with Google Antigravity.
+#### Let's play: https://hasankhair.github.io/pop/index.html
 <br>
 <div align="center">
   <img src="images/1.png" alt="App Screenshot" width=80% height=80%>
