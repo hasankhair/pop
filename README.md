@@ -5,9 +5,11 @@ Click the bubbles to pop.
 <div align="center">
   <img src="images/1.png" alt="App Screenshot" width=80% height=80%>
 </div>
+<br>
 <div align="center">
   <img src="images/2.png" alt="App Screenshot" width=80% height=80%>
 </div>
+<br>
 <div align="center">
   <img src="images/3.png" alt="App Screenshot" width=80% height=80%>
 </div>
